@@ -1,0 +1,30 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.nav_menu{
+    display: flex;
+    gap: 2em;
+    border: 1px solid green;
+}
+
+.lista_menu{
+    border: 1px solid red;
+    display: flex;
+    gap: 2em;
+}
+
+.item_menu{
+
+}
+
+.icones_cabecalho{
+    border: 1px solid grey;
+}
+
+.icone_cabecalho{
+    border: 1px solid purple;
+}
