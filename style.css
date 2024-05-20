@@ -19,11 +19,15 @@ body{
     border: 1px solid;
 }
 
+.imagem-logo{
+    width: 200px;
+}
+
 :root{
-    --cor-vermelho: #8C0E03;
+    --cor-azul: #011E38;
     --cor-branco: #A6A6A6;
     --cor-branco-claro: #ff9696;
     --cor-bege:#737156;
-    --cor-vemelho-claro:#BF2C38;
+    --cor-azul-claro:#024986;
     --fonte-principal: 'Inter'
 }

@@ -13,11 +13,11 @@
 .filtro{
     width: 100px;
     height: 40px;
-    border: 1px solid var(--cor-vermelho);
+    border: 1px solid var(--cor-azul);
     margin: 1px;
-    box-shadow: 1px 1px 5px 0px rgb(87, 8, 1);
+    box-shadow: 1px 1px 5px 0px rgb(2, 27, 134);
 
-    color: var(--cor-vermelho);
+    color: var(--cor-azul);
 }
 
 .produto_livros{
@@ -43,7 +43,7 @@
     gap: 10px;
     align-items: center;
     padding: 1em;
-    border: 1px solid var(--cor-branco-claro);
+    border: 1px solid var(--cor-azul-claro);
 }
 
 .titulo_livro{
@@ -56,7 +56,7 @@
     font-family: var(--fonte-principal);
     font-size: 10px;
     padding: 0.5em;
-    border: 1px solid var(--cor-vermelho);
+    border: 1px solid var(--cor-azul);
 }
 
 .area_compra_livro{
@@ -75,7 +75,7 @@
     border: none;
     border-radius: 10%;
     color: white;
-    background-color: var(--cor-vermelho);
+    background-color: var(--cor-azul);
     width: 5vw;
     height: 4vh;
 }
