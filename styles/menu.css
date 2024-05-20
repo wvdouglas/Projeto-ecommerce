@@ -2,29 +2,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    background-color: var(--cor-vermelho);
+}
+
+.logo-site{
+    margin-left: 0.5em;
+    color: var(--cor-branco);
 }
 
 .nav_menu{
     display: flex;
     gap: 2em;
-    border: 1px solid green;
+    margin-right: 1em;
 }
 
 .lista_menu{
-    border: 1px solid red;
     display: flex;
     gap: 2em;
 }
 
 .item_menu{
-
+    margin: 0.5em;
+    padding: 0.5em;
+    color: var(--cor-branco);
+    border-bottom: 1px solid var(--cor-branco);
 }
 
 .icones_cabecalho{
-    border: 1px solid grey;
+    display: flex;
+    gap: 1em;
 }
 
 .icone_cabecalho{
-    border: 1px solid purple;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 5%;
+    color: var(--cor-vermelho);
+    border: 1px solid var(--cor-branco);
+    background-color: var(--cor-branco);
 }
