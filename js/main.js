@@ -1,7 +1,8 @@
 const listaLivros = document.querySelector('.lista_livros');
 const areaDeCompra = document.querySelector('.area_compra_livro');
+const campoDeBusca = document.querySelector('#campo_de_busca');
 
-let livros = [
+const livros = [
 	{
     id: 1,
 	titulo: "Moby dick",
@@ -131,7 +132,7 @@ let livros = [
 ]
 
  function mostrarLivros(livros){
-	const list = `${
+	const lista = `${
 		livros.map(livro =>  `
 		<li class="livro">
 			<img src="${livro.imagem}" class="imagem-livro">
@@ -142,9 +143,20 @@ let livros = [
 				<button class="comprar">Comprar</button>
 			</div>
 	   </li>
-	 `).join('')
+	 `)
 	}`
-	listaLivros.innerHTML = list;
+	listaLivros.innerHTML = lista;
  }
 
- mostrarLivros(livros)
+function campoPesquisa(){
+	campoDeBusca.addEventListener("keyup", (e) => {
+		const letra = e.target.value;
+		const procura = livros.filter(e => e.titulo.toLocaleLowerCase().includes(letra.toLocaleLowerCase())
+		)
+		mostrarLivros(procura)
+	})
+}
+
+
+campoPesquisa()
+mostrarLivros(livros)

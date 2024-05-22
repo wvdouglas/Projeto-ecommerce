@@ -4,11 +4,12 @@
     align-items: center;
 }
 
-.logo-site{
-    margin-left: 0.5em;
-    color: var(--cor-branco);
+#campo_de_busca{
+    border: 1px solid var(--cor-azul);
+    width: 30vw;
+    height: 4vh;
+    border-radius: 3%;
 }
-
 .nav_menu{
     display: flex;
     gap: 2em;
@@ -17,7 +18,7 @@
 
 .lista_menu{
     display: flex;
-    gap: 2em;
+    gap: 1em;
 }
 
 .item_menu{
@@ -37,6 +38,9 @@
     padding: 0.5em;
     border-radius: 5%;
     color: white;
-    border: 1px solid var(--cor-branco);
-    background-color: var(--cor-azul);
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
 }
