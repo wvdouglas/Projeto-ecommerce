@@ -1,8 +1,24 @@
 const listaLivros = document.querySelector('.lista_livros');
 const areaDeCompra = document.querySelector('.area_compra_livro');
 const campoDeBusca = document.querySelector('#campo_de_busca');
+const btnFiltro = document.querySelectorAll('.filtro');
+const btnTodos = document.querySelector('.todos');
 
- function mostrarLivros(livros){
+btnFiltro.forEach(botao => botao.addEventListener('click', filtrarLivros))
+
+function filtrarLivros(){
+    const elementoBtn = document.getElementById(this.id);
+    const categoria = elementoBtn.value;
+    let livrosFiltrados = livros.filter(livro => 
+        livro.categoria == categoria);
+		if(categoria === 'Todos'){
+			mostrarLivros(livros)
+		}else{
+			mostrarLivros(livrosFiltrados)
+	}
+}
+
+function mostrarLivros(livros){
 	const lista = `${
 		livros.map(livro =>  `
 		<li class="livro">
@@ -17,7 +33,7 @@ const campoDeBusca = document.querySelector('#campo_de_busca');
 	 `)
 	}`
 	listaLivros.innerHTML = lista;
- }
+}
 
 function campoPesquisa(){
 	campoDeBusca.addEventListener("keyup", (e) => {
@@ -28,6 +44,4 @@ function campoPesquisa(){
 	})
 }
 
-
 campoPesquisa()
-mostrarLivros(livros)
