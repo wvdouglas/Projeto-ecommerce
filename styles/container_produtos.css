@@ -83,3 +83,89 @@
     width: 5vw;
     height: 4vh;
 }
+
+@media screen and (max-width: 500px){
+    .container_produtos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botao_filtros{
+        display: flex;
+    }
+    
+    .filtro{
+        width: 80px;
+        height: 40px;
+        border: 1px solid var(--cor-azul);
+        box-shadow: 0px 0px 7px 0px rgb(154, 169, 236);
+        color: var(--cor-azul);
+        font-size: 10px;
+    }
+    
+    .filtro:hover{
+        background-color: var(--cor-azul);
+        color: white;
+    }
+    
+    .produto_livros{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .lista_livros{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        width: 80%;
+    }
+    
+    .livro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        height:300px;
+        align-items: center;
+        padding: 1em;
+        border: 1px solid var(--cor-azul-claro);
+    }
+    
+    .titulo_livro{
+        font-family: var(--fonte-principal);
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .categoria_livro{
+        font-family: var(--fonte-principal);
+        font-size: 10px;
+        padding: 0.5em;
+        border: 1px solid var(--cor-azul);
+    }
+    
+    .area_compra_livro{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .preco_livro{
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    .comprar{
+        border: none;
+        border-radius: 10%;
+        color: white;
+        background-color: var(--cor-azul);
+        width: 15vw;
+        height: 4vh;
+    }
+}

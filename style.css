@@ -31,3 +31,10 @@ body{
     --cor-azul-claro:#024986;
     --fonte-principal: 'Inter'
 }
+
+@media screen and (max-width: 500px){
+    .imagem-livro{
+        width: 100px;
+        border: 1px solid;
+    }
+}
