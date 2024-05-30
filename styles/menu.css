@@ -65,7 +65,7 @@
     height: 40px;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 580px){
     .cabecalho{
         display: flex;
         justify-content: center;
