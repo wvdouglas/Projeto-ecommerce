@@ -36,5 +36,8 @@ body{
     .imagem-livro{
         width: 100px;
         border: 1px solid;
+  }
+  .imagem-logo{
+    width: 150px;
     }
 }
