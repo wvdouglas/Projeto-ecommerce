@@ -84,7 +84,7 @@
     height: 4vh;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 580px){
     .container_produtos{
         display: flex;
         flex-direction: column;
@@ -129,7 +129,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 300px;
-        height:300px;
+        height:350px;
         align-items: center;
         border: 1px solid var(--cor-azul-claro);
     }
