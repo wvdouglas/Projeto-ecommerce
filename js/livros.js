@@ -107,24 +107,6 @@ const livros = [
 		quantidade: 50,
 		categoria: "auto-conhecimento"
 	},
-	{
-		id: 13,
-		titulo: "Moby dick",
-		preco: 17.99,
-		autor: "Sun tzu",
-		imagem: "https://cdn.awsli.com.br/600x1000/2088/2088593/produto/142516520/f563995353.jpg",
-		quantidade: 50,
-		categoria: "historia"
-	},
-	{
-		id: 14,
-		titulo: "Simplesmente Acontece",
-		preco: 38.99,
-		autor: "Sun tzu",
-		imagem: "https://m.media-amazon.com/images/I/81Hu-hqqXtL._AC_UF1000,1000_QL80_.jpg",
-		quantidade: 50,
-		categoria: "romance"
-	},
 ];
 
 mostrarLivros(livros)

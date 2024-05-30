@@ -3,8 +3,10 @@ const areaDeCompra = document.querySelector('.area_compra_livro');
 const campoDeBusca = document.querySelector('#campo_de_busca');
 const btnFiltro = document.querySelectorAll('.filtro');
 const btnTodos = document.querySelector('.todos');
+const menuHamburguer = document.querySelector('#menu');
 
-btnFiltro.forEach(botao => botao.addEventListener('click', filtrarLivros))
+btnFiltro.forEach(botao => botao.addEventListener('click', filtrarLivros));
+menuHamburguer.addEventListener('click', alteraMenuHamburguer)
 
 function filtrarLivros(){
     const elementoBtn = document.getElementById(this.id);
@@ -42,6 +44,14 @@ function campoPesquisa(){
 		)
 		mostrarLivros(procura)
 	})
+}
+
+function alteraMenuHamburguer(){	
+		if(menuHamburguer.checked == false){
+			document.querySelector('.lista-menu-hamburguer').style.display = 'flex'
+		}else{
+			document.querySelector('.lista-menu-hamburguer').style.display = 'none'
+		}	
 }
 
 campoPesquisa()
