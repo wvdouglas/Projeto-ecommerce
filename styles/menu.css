@@ -82,6 +82,7 @@
         flex-direction: column;
         position: absolute;
         top: 80px;
+        right:3px;
         background-color: var(--cor-azul);
     }
 
