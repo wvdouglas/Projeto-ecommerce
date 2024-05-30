@@ -20,10 +20,18 @@
     display: none;
 }
 
+.input-menu{
+    display: none;
+}
+
 .item-menu-hamburguer{
     display: block;
 }
 
+.menu_superior{
+    display: flex;
+    align-items: center;
+}
 
 .lista_menu{
     display: flex;
@@ -31,7 +39,10 @@
 }
 
 .item_menu{
-    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
     padding: 0.5em;
     color: var(--cor-azul);
     border-bottom: 1px solid var(--cor-azul);
